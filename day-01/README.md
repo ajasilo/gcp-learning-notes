@@ -1,45 +1,44 @@
-# Day 01 – Fundamentals of Cloud & Introduction to GCP
+# Day 01 – Getting Started with GCP (Free Trial & Console Basics)
 
 ## What I Learned
-- **Cloud Computing Basics**:  
-  Traditional data centers required heavy investment in servers, racks, cooling, and system administrators.  
-  Cloud computing solves this by providing resources (compute, storage, networking) as a service.  
+- **Google Cloud Overview**:  
+  GCP offers 200+ services across compute, networking, storage, AI/ML, DevOps, and more. As a beginner, it’s important to start with the fundamentals and understand which services are included in the **free trial**.  
 
-- **Challenges of Traditional Setup**:  
-  - High upfront cost for servers and maintenance.  
-  - Underutilization of resources (paying for capacity even when idle).  
-  - Need for system administrators to manage upgrades, patches, and networking.  
+- **Free Trial Account**:  
+  - New users get **$300 credits valid for 90 days**.  
+  - Some services are always free (e.g., 1 f1-micro VM, 5GB Cloud Storage).  
+  - Usage outside the free tier is charged at standard rates, but you won’t be overcharged unless you upgrade to a paid account.  
+  - Payment methods supported: credit card, debit card, PayPal (and UPI in some regions).  
 
-- **Public, Private, and Hybrid Cloud**:  
-  - *Public Cloud*: Providers like AWS, Azure, GCP maintain global data centers; customers pay only for what they use.  
-  - *Private Cloud*: Organizations (banks, financial institutions) run their own data centers due to sensitive data.  
-  - *Hybrid Cloud*: Mix of both—sensitive workloads on private infra, general workloads on public cloud.  
+- **Default Setup**:  
+  - When you sign up, GCP automatically creates a **billing account** and a **default project**.  
+  - Each project has a **unique project ID**, which differentiates them even if names are the same.  
 
-- **Why GCP?**  
-  - Proven scalability & performance: Gmail and YouTube already run on GCP.  
-  - Competitive with AWS & Azure; differences lie in implementation, performance, and integration.  
+- **Google Cloud Console**:  
+  - Dashboard shows pinned services, real-time API requests, and monitoring widgets.  
+  - Services can be pinned/unpinned for quick access.  
+  - Resources can be searched directly (e.g., “Compute Engine” for VMs).  
 
-## Hands-on
-- Learned how to create a **GCP Free Tier account**.  
-- Benefits:  
-  - $300 free credits (valid for 90 days).  
-  - Always-free services (e.g., 1 f1-micro VM, 5GB storage, BigQuery, Cloud Run).  
-- Explored **GCP Console** and **Cloud Shell** for managing resources.  
-- Understood that billing only applies beyond free tier usage.  
+- **Ways to Interact with GCP**:  
+  1. **Console (UI)** – Click through the web interface.  
+  2. **APIs** – Programmatic access for automation.  
+  3. **Cloud Shell (CLI)** – Pre-configured shell with `gcloud` SDK, code editor, and utilities.  
 
-## Key Vocabulary (Day-1 Familiarization)  
-- **Virtualization**: Breaking down a physical server into multiple virtual servers (VMs).  
-- **Virtual Machine (VM)**: A software-based emulation of a physical server.  
-- **API**: Application Programming Interface for programmatic access to GCP services.  
-- **Region**: A geographic area with multiple data centers.  
-- **Availability Zone (AZ)**: Individual data centers within a region for redundancy.  
-- **Scalability**: Ability to handle more requests by scaling infra.  
-- **Elasticity**: Auto-scaling resources up or down as demand changes.  
-- **Agility**: Ability to adapt quickly to changing requirements.  
-- **High Availability (HA)**: Keeping applications online almost 100% of the time.  
-- **Fault Tolerance**: System continues to operate even if hardware/software fails.  
-- **Disaster Recovery (DR)**: Backup & recovery strategy in case of system failure.  
-- **Load Balancing**: Distributing traffic across multiple servers for reliability.  
+- **Cloud Shell Features**:  
+  - Free for all users.  
+  - Includes terminal, file upload/download, web preview for apps, and an online code editor (similar to VS Code).  
+  - Great for running quick commands and editing files without local setup.  
+
+- **Free Tier Limits (Examples)**:  
+  - 1 non-preemptible **E2-micro VM** in specific US regions (per month).  
+  - 30 GB SSD storage free each month.  
+  - Services like GKE, BigQuery, Cloud Run also have limited free usage.  
+  - Anything beyond the limit is billed at standard rates.  
+
+- **Important Notes**:  
+  - Production images with premium OS licenses (e.g., Windows Server, SQL Server) are **not free**.  
+  - Always set up **budgets and alerts** to monitor usage.  
+  - Free trial users don’t get full technical support beyond the initial period.  
 
 ## Reflection
-Day-01 provided the foundation for understanding cloud computing, the differences between traditional infrastructure and cloud, and why GCP is a strong choice. I also created my free GCP account and explored the console. With these basics, I’m ready to dive deeper into core GCP services.  
+Day-01 introduced the fundamentals of GCP, how to set up a free trial account, and how to navigate the console. I learned the difference between free tier vs. paid resources, explored Cloud Shell and the project structure, and understood how to safely practice without overspending. This foundation prepares me for provisioning my first VM and working with core GCP services.  
